@@ -1,0 +1,239 @@
+.main-svg-inner > video{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.main_screen__inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 180px 90px 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 9;
+}
+
+.stadion-spb-logo {
+  color: #fff;
+  margin-left: -40px;
+  margin-bottom: 30px;
+  font-family: $font-family_bold;
+}
+
+.advantages__box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.stadium_advs {
+  display: flex;
+  width: 100%;
+  margin-right: 60px;
+}
+
+.advs__item {
+  border-top: 2px solid #fff;
+  padding: 20px 0;
+  color: #fff;
+  margin-right: 90px;
+  min-width: 280px;
+}
+
+.adv_name {
+  font-size: 11px;
+}
+
+.adv_count {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.event__box {
+  background: -moz-linear-gradient(top, rgba(33,34,51,0.8) 0%, rgba(33,34,51,0) 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(33,34,51,0.8) 0%,rgba(33,34,51,0) 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(33,34,51,0.8) 0%,rgba(33,34,51,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 20px;
+  margin-right: 30px;
+  max-width: 420px;
+  position: relative;
+}
+
+.event__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  font-family: $font-family;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.event_block_title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  p {
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.event_date {
+  font-size: 24px;
+  font-family: $font-family_light;
+  line-height: 24px;
+}
+
+.round-point {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted #fff;
+  margin-right: 30px;
+  img {
+    width: 27px;
+    margin-right: 0;
+  }
+}
+
+.point {
+  p {
+    color: #fff;
+  }
+  margin-bottom: 60px;
+}
+
+.event_game {
+  p {
+    font-size: 12px;
+  }
+}
+
+.who_play {
+  font-size: 18px !important;
+  text-transform: uppercase;
+  font-family: $font-family_semibold;
+}
+
+.header_logo {
+  .justleft {
+    font-size: 10px;
+  }
+  .logo-spb {
+    font-size: 13px;
+  }
+
+}
+
+.info_box {
+  .email a {
+    color: #000;
+    text-decoration: none;
+    font-family: $font-family_semibold;
+  }
+}
+
+
+@media (max-width: 1780px) {
+  .advs__item {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .adv_count {
+    font-size: 20px;
+  }
+  .advs__item {
+    min-width: auto;
+  }
+  .fone_scheme {
+    position: relative;
+    left: 150px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header__inner {
+    padding: 0 60px;
+  }
+    .adv_count {
+    font-size: 18px;
+  }
+  .adv_name {
+    font-size: 10px;
+  }
+  .stadion-spb-logo {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .advs__item {
+    margin-right: 60px;
+  }
+  .footer__inner {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-height: 740px) and (min-width: 1200px) {
+  .section_content__box {
+    padding: 90px 60px;
+  }
+  .footer-nav__box {
+    margin-bottom: 20px;
+  }
+  .footer-nav {
+    height: auto;
+  }
+  .footer__inner {
+    justify-content: flex-end;
+  }
+  .main-upper {
+    font-size: 32px !important;
+  }
+  .title-sub-pages p {
+    font-size: 10px;
+  }
+  .level {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 640px) and (min-width: 1200px) {
+
+  .ch_way__box {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .change_way {
+    height: auto;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 1200px) {
+  .logo-inner {
+    left: -114px;
+  }
+  .fullpage_nav {
+    top: 52%;
+  }
+}

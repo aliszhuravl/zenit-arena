@@ -1,0 +1,311 @@
+.page_about {
+  flex-direction: column;
+  .stadium_advs {
+    .advs__item {
+      color: #212233;
+      border-top: 2px solid #212233;
+    }
+  }
+}
+
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 180px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.about_page__section {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/fone-about.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: auto;
+  background-color: #F0F4F7;
+}
+
+.simple-ap__section {
+  background-image: none;
+  background-color: #F0F4F7;
+  min-height: auto;
+}
+
+.park_section {
+  background-color: #fafcfc;
+}
+
+.first-sec {
+  height: 100vh;
+}
+
+.park_section .descr__inner {
+  margin-bottom: 0;
+}
+
+.tag_section {
+  background-color: #2996ea;
+}
+
+.title_info__inner {
+  margin-bottom: 180px;
+  p {
+    max-width: 600px;
+  }
+}
+
+.descr__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+.advs__des {
+  flex-direction: column;
+}
+
+.main-about__inner {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title__des {
+  margin-bottom: 30px;
+}
+
+.some_info__inner {
+  max-width: 600px;
+}
+
+.header_simple {
+  position: absolute;
+}
+
+.roof__img {
+  img {
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  margin-bottom: 90px;
+}
+
+.roof__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.field__inner {
+  position: relative;
+}
+
+.tag_inner {
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.htag__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.social_tag {
+  color: #fff;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  p {
+    font-size: 13px;
+  }
+}
+
+.social {
+  display: flex;
+  img {
+    margin: 10px;
+    height: 30px;
+  }
+}
+
+.p_top_inner {
+  border-top: 0 !important;
+  .adv_name {
+    font-size: 15px;
+    color: #000;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+.round_point {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.ci_sq {
+  font-family: $font-family_bold;
+  font-size: 17px;
+}
+
+.ci__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  margin-right: 60px;
+}
+
+.counts__inner {
+  flex-direction: column !important;
+}
+
+.tag__des {
+  text-transform: uppercase;
+  font-size: 17px !important;
+}
+
+.tag {
+  color: #fff;
+  font-size: 72px;
+  font-family: $font-family_bold;
+}
+
+.tag_s_inner {
+  padding: 0 180px;
+}
+
+.park_des {
+  font-size: 30px;
+
+}
+
+.fi__mobile {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .section__inner {
+    padding: 90px 90px 90px 180px;
+    width: 100%;
+  }
+  .tag_s_inner {
+    padding: 0 90px 0 180px;
+  }
+}
+
+@media (max-width: 980px) {
+  .first-sec {
+    height: auto;
+  }
+  .section__inner {
+    padding: 20px;
+    .title_info__inner {
+      margin-bottom: 30px;
+    }
+  }
+  .about_page__section {
+    background-image: none;
+    height: auto;
+    min-height: auto;
+  }
+  .main-about__inner {
+    flex-direction: column;
+  }
+  .about_advs {
+    display: flex;
+    flex-direction: column;
+  }
+  .title__des,
+  .roof__title {
+    font-size: 32px;
+    font-family: $font-family_light;
+    line-height: 32px;
+  }
+  .adv_count {
+    font-size: 28px;
+  }
+  .advs__item {
+    margin-right: 0;
+  }
+  .ci__item {
+    margin-right: 0;
+  }
+  .descr__inner {
+    margin-bottom: 45px;
+  }
+  .roof__img img {
+    width: 100%;
+    max-width: 360px;
+  }
+.field__inner {
+  img {
+    display: none;
+  }
+}
+  .field__inner {
+    display: none;
+  }
+  .fi__mobile {
+    display: block !important;
+    img {
+      display: block;
+      margin-bottom: 45px;
+    }
+  }
+  .fi_mobile__item {
+    margin-bottom: 30px;
+  }
+  .fi_title {
+    font-size: 17px;
+    font-family: $font-family_semibold;
+    line-height: 18px;
+  }
+  .all_fi_info {
+    opacity: 0.5;
+  }
+
+  .park__advs {
+    display: flex;
+    flex-direction: column;
+    .adv_name {
+      font-size: 18px;
+    }
+    .adv_count {
+      font-size: 32px;
+    }
+  }
+  .tag__des {
+    text-transform: none;
+    font-size: 19px !important;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .tag {
+    font-size: 45px;
+  }
+  .htag__inner {
+    flex-direction: column;
+  }
+  .tag_s_inner {
+    .descr__inner {
+      margin-bottom: 0;
+    }
+  }
+  .info_box .email {
+    display: none;
+  }
+  .page_about .stadium_advs .advs__item {
+    max-width: 300px;
+  }
+
+}

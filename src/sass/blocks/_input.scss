@@ -1,0 +1,12 @@
+.txt-input {
+  position: relative;
+  padding: 18px 25px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #f0f4f7;
+  border-radius: 30px;
+}
+
+.txt-input::-webkit-input-placeholder {
+  color: #7a8991;
+}

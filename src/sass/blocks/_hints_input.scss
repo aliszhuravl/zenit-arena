@@ -1,0 +1,24 @@
+.hints-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  z-index: 4;
+  background: #fff;
+  list-style: none;
+  border: 1px solid #f0f4f7;
+
+  padding: 0;
+  margin: 0;
+  display: none;
+
+  li {
+    padding: 8px 25px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background: #e8eef2;
+  }
+
+}

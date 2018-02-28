@@ -1,0 +1,30 @@
+.map-mobile {
+  display: none;
+}
+
+.map_block {
+  width: 100%;
+  height: 300px;
+}
+
+.allwide_map__inner {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+
+}
+
+.allwide_map {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 690px) {
+  .map-mobile {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+}

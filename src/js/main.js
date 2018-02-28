@@ -1,0 +1,14 @@
+//= parts/_viewport.js
+//= parts/_ie.js
+//= parts/_link-highlighting.js
+//= parts/_scrolling.js
+//= parts/_dropdown.js
+//= parts/_slick.js
+//= parts/_left-sidebar.js
+//= parts/_hamburger.js
+//= parts/_i-form.js
+//= parts/_tabs.js
+//= parts/_sticky-menu.js
+//= parts/_map.js
+//= parts/_prel.js
+//= parts/_fullpage.js

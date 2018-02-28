@@ -1,0 +1,96 @@
+.section-place-stadium {
+  overflow: hidden;
+}
+
+.svg-places {
+  width: 600px;
+  margin-right: 30px;
+}
+
+.inactive-bt {
+  display: none;
+}
+
+.stadium-block {
+  margin-top: 60px;
+  width: 100%;
+  transition: width 0.4s;
+}
+
+.sector-block {
+  width: 100%;
+  transition: width 0.4s;
+}
+
+.inactive-stad {
+  width: 1px;
+  transition: width 0.4s;
+  overflow: hidden;
+}
+
+.show-sector {
+  font-family: $font-family_bold;
+  color: #000;
+  opacity: 0.5;
+}
+
+.hide-sector {
+  font-family: $font-family_bold;
+  color: #000;
+}
+
+.arr-p {
+  position: relative;
+  cursor: pointer;
+}
+
+.arr-right {
+  position: absolute;
+  top: 11px;
+  margin-left: 10px;
+  content: "";
+  &:after {
+    position: absolute;
+    right: -20px;
+    left: auto;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 6px;
+    height: 6px;
+    content: "";
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    top: -2px;
+  }
+}
+
+.arr-left {
+  position: absolute;
+  top: 11px;
+  height: 2px;
+  width: 15px;
+  background-color: #000;
+  margin-right: 30px;
+  content: "";
+  left: -30px;
+  &:after {
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    width: 6px;
+    height: 6px;
+    content: "";
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    top: -2px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+
+  .hide-sector {
+    display: none;
+  }
+}

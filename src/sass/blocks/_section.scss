@@ -1,0 +1,321 @@
+.section.page-item {
+  width: 100%;
+  padding: 0;
+  background-color: $color-gray-10;
+  position: absolute;
+  min-height: 100vh;
+}
+
+.section__box {
+  width: 100%;
+  height: 100%;
+  margin-left: 90px;
+  position: relative;
+}
+
+.section_content__box {
+  position: absolute;
+  z-index: 3 !important;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 180px 90px;
+}
+
+.section_inner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  h1 {
+    margin: 0 0 90px 0;
+    line-height: 48px;
+  }
+  p {
+    max-width: 500px;
+  }
+}
+
+.page-item_main {
+  padding: 60px 0 0 90px !important;
+}
+
+.section-services {
+  padding: 0 440px 0 180px !important;
+}
+
+.section-finding-sector {
+  padding: 0 400px 0 180px !important;
+  .section_inner h1 {
+    margin: 0 0 30px 0;
+  }
+}
+
+.fixed-buy-button {
+  display: none;
+}
+
+.img-way {
+  position: absolute;
+  left: 17%;
+  top: 65%;
+  z-index: 2;
+  display: none;
+}
+
+.img-ibutton {
+  position: absolute;
+  left: 33%;
+  top: 47%;
+  z-index: 2;
+  display: none;
+}
+
+.img-cope {
+  position: absolute;
+  left: 42%;
+  top: 62%;
+  z-index: 2;
+  display: none;
+}
+
+.img-tick {
+  position: absolute;
+  left: 70%;
+  top: 72%;
+  z-index: 2;
+  display: none;
+}
+
+.section-place-stadium {
+  img {
+    max-height: 650px;
+  }
+}
+
+.page-vremenno.page-item_main {
+
+  padding: 0 !important;
+
+  .main-svg {
+    position: relative;
+  }
+  .darken {
+      position: absolute;
+      z-index: 3;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      width: 100%;
+      content: '';
+      top: 0;
+      left: 0;
+  }
+  .vremenno-preim {
+    .event__inner {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      .event_date {
+        line-height: 40px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+    position: absolute;
+    z-index: 4;
+    bottom: 200px;
+    left: 190px;
+    color: #fff;
+    max-width: 1200px;
+  }
+  .main-page-title {
+    margin: 60px 0 0 140px;
+    color: #fff;
+    position: absolute;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 1600px) {
+
+  .page-vremenno.page-item_main {
+    .vremenno-preim {
+      left: 130px;
+    }
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .svg-service {
+    width: 700px;
+  }
+
+  .svg-sector {
+    width: 725px;
+  }
+
+  .section-place-stadium {
+    img {
+      max-height: 550px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .darken {
+    display: none;
+  }
+  .vremenno-preim {
+    display: none;
+  }
+  .page-vremenno.page-item_main .main-page-title {
+    margin: 60px 0 0 60px;
+  }
+  .img-way {
+    display: none;
+  }
+
+  .img-ibutton {
+    display: none;
+  }
+
+  .img-cope {
+    display: none;
+  }
+  .img-tick {
+    display: none;
+  }
+  .section {
+    padding: 60px 60px !important;
+  }
+  .section_inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .titles {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+  .img-way {
+    display: none;
+  }
+
+  .svg-service {
+    width: 650px;
+  }
+
+  .svg-sector {
+    width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-vremenno.page-item_main .main-page-title {
+    margin: 20px 0 0 0px;
+  }
+  .fixed-buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    color: #fff;
+    z-index: 5;
+    background-color: #2996ea;
+  }
+  .section {
+    padding: 30px 15px !important;
+  }
+}
+
+@media (max-height: 810px) {
+  .svg-service {
+    height: 560px;
+    margin-top: 30px;
+  }
+  .svg-stadion {
+    height: 500px;
+  }
+  .svg-sector {
+    height: 560px;
+    max-width: 700px;
+    margin-top: 0;
+  }
+  .svg-places {
+    width: 500px;
+  }
+  .stadium-block {
+    margin-top: 0;
+  }
+  .section-place-stadium {
+    max-height: 550px;
+    img {
+      max-height: 550px;
+    }
+  }
+  .svg__inner {
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .stadium-block {
+    img {
+      height: 560px;
+      max-width: 700px;
+      margin-top: 0;
+    }
+  }
+  .sector-block {
+    img {
+      width: 500px;
+    }
+  }
+  .parking-info {
+    bottom: 70px;
+    p {
+      font-size: 12px;
+    }
+  }
+  .footer-short {
+    bottom: -30px;
+  }
+  .i-form__inner {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-height: 690px) {
+  .svg-stadion {
+    height: 450px;
+    width: auto;
+  }
+  .stadium-block {
+    img {
+      height: 450px;
+      max-width: 700px;
+      margin-top: 0;
+    }
+  }
+  .sector-block {
+    img {
+      height: 450px;
+      max-width: 700px;
+      margin-top: 0;
+    }
+  }
+  .abs-nav {
+    bottom: 30px;
+  }
+}

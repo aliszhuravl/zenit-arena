@@ -1,0 +1,558 @@
+.dropdown__ways {
+  display: none;
+}
+
+.mobile_save {
+  display: none;
+}
+
+.active_slb {
+  right: 15px !important;
+  transition: right 0.3s;
+}
+
+.mobile_way__box {
+  display: none;
+}
+
+.save_btn {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("../img/points.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 9px 9px rgba(41, 150, 234, .1);
+  border: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mn__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.box__lower {
+  margin-top: 100px;
+}
+
+.mobile_show_lvls {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+
+  .info_box {
+    justify-content: flex-end;
+  }
+
+
+  .help_services {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 11;
+    background-color: #fff;
+    box-shadow: 0 0 9px 9px rgba(41, 150, 234, .1);
+    padding: 10px;
+  }
+
+  .legend_way {
+    display: none;
+  }
+  .info_box {
+    width: 100%;
+  }
+  .header {
+    z-index: 9;
+    padding: 0 20px;
+    .mainmenu {
+      display: none;
+    }
+    background-color: transparent;
+  }
+  .header-all {
+    display: none;
+  }
+  .section.page-item {
+    padding: 0 !important;
+  }
+  .stadium_advs {
+    display: none;
+  }
+  .main_screen__inner {
+    position: absolute;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 60px;
+  }
+  .main-svg-inner {
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  .darken {
+    display: block;
+  }
+  .mobile-main-menu {
+    display: none;
+  }
+  .section__box {
+    margin-left: 0;
+  }
+  .section_content__box {
+    padding: 60px;
+  }
+  .sectors_section__box {
+    margin-left: 0;
+  }
+  .section_content__box {
+    right: 0;
+  }
+  .title-main-stadion {
+    align-items: flex-start;
+  }
+  .change_way {
+    align-items: flex-end;
+  }
+  .switch_scheme {
+    display: none;
+  }
+  .fone_scheme {
+    position: relative;
+    width: 150%;
+    top: 30px;
+    right: 350px;
+    left: auto;
+  }
+  .dropdown__list {
+    top: -180px;
+  }
+}
+
+@media (max-width: 640px) {
+  .box__lower {
+    .btn_box {
+      z-index: 5;
+    }
+  }
+  .sl__inner p {
+    padding: 7px 4px;
+    font-size: 13px;
+  }
+
+  .stadium_levels__box {
+    right: -50px;
+    top: 52%;
+  }
+  .mobile_show_lvls {
+    display: block;
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    z-index: 4;
+    .lvls_btn {
+      background-image: url("../img/svg/lvls.svg");
+      background-size: 25px;
+      min-width: 50px;
+      max-width: 50px;
+      height: 50px;
+      padding: 0;
+      border-radius: 50%;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0px 0px 9px 9px rgba(41, 150, 234, .1);
+      border: none;
+    }
+  }
+
+  .event_game p {
+    font-size: 10px;
+  }
+  .who_play {
+    font-size: 15px !important;
+  }
+  .event_date {
+    font-size: 21px;
+  }
+  .button__box {
+    display: none;
+  }
+
+  .tabs__item {
+    background-image: none;
+  }
+  .slick-prev {
+    left: 230px !important;
+    padding: 10px;
+  }
+  .slick-next {
+    left: 250px !important;
+    padding: 10px;
+  }
+  .event {
+    margin-right: 0;
+  }
+  .info_box {
+    justify-content: flex-end !important;
+  }
+  .main_header {
+    background: transparent;
+    .email {
+      display: none;
+    }
+  }
+  .header {
+    padding: 0 15px;
+    .btn p {
+      display: none;
+    }
+  }
+  .main_header .header__inner {
+    padding: 15px 0 0 0;
+  }
+  .info_box {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .btn_box .btn {
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    background-image: url('../img/svg/tick.svg');
+    -webkit-background-size: 70%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .menu-mobile__bottom .btn_box .btn {
+    -webkit-background-size: 14%;
+    background-size: 14%;
+  }
+
+  .main_screen__inner {
+    padding: 0;
+    z-index:3;
+  }
+  .stadion-spb-logo {
+    margin: 0 0 30px 0;
+    text-align: center;
+    h1 span {
+      margin: 0;
+    }
+  }
+  .point {
+    margin: 0 0 15px 0;
+    flex-direction: column;
+    align-items: center;
+    .round-point {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  .advantages__box {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .main_title__box {
+    margin-bottom: 30px;
+  }
+  .event__box {
+    width: 100%;
+    margin: 0;
+  }
+  .main_header .email a {
+    font-size: 10px;
+  }
+  .section_content__box {
+    width: 100%;
+    padding: 0;
+  }
+  .tabs-cards {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .tabs__buttons {
+    flex-direction: row;
+  }
+  .shuttle__inner {
+    justify-content: space-between;
+    height: auto;
+    min-height: 220px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    pointer-events: auto;
+  }
+  .btn_bus {
+    display: none;
+  }
+  .change_way {
+    display: none;
+  }
+
+  .tabs__buttons {
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .tabs__content {
+    padding: 0 15px;
+  }
+  .tabs__btn {
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 9px 9px rgba(41, 150, 234, .1);
+  }
+  .tabs__content {
+    font-size: 11px;
+  }
+  .tabs-contents {
+    justify-content: space-between;
+  }
+  .tabs__item {
+    padding: 15px;
+  }
+  .tabs__item.active {
+    width: 100%;
+  }
+  .title-main-stadion {
+    margin-top: 30px;
+    max-width: 180px;
+  }
+  .title-main-stadion h1 {
+    text-align: left;
+    line-height: 25px;
+    margin-left: 15px;
+  }
+.title-sub-pages {
+  margin-top: 30px;
+  margin-left: 15px;
+  p {
+    display: none;
+  }
+}
+  .help_services {
+    width: 100%;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .btn {
+      max-width: 50px;
+      min-width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      padding: 0;
+      span {
+        display: none;
+      }
+    }
+  }
+.switch_scheme .level {
+  display: none;
+}
+  .fone_scheme {
+    width: 200%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    left: 17%;
+    transform: translateX(-15%);
+    top: -20px;
+  }
+.have-svg__inner {
+  align-items: center;
+}
+  .show-sector,
+  .hide-sector {
+    opacity: 1;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    color: #7a8991;
+    box-shadow: 0px 0px 9px 9px rgba(41, 150, 234, .1);
+  }
+  .hide-sector {
+    display: none;
+  }
+  .dropdown_sectors {
+    position: absolute;
+    bottom: 85px;
+    margin: 0 15px;
+  }
+  .arr-p {
+    font-size: 13px;
+    font-family: $font-family;
+  }
+  .switch_scheme {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+  }
+  .dropdown__text {
+    box-shadow: 0px 0px 9px 9px rgba(41, 150, 234, .1);
+  }
+  .dropdown__ways {
+    display: block;
+  }
+  .mobile_save {
+    display: block;
+    position: relative;
+    .save_links__box {
+      display: none;
+      position: absolute;
+      top: -75px;
+      right: 0;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 9px 9px rgba(41, 150, 234, .1);
+      opacity: 0;
+      transition: 0.3s;
+      a {
+        font-size: 12px;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  .mobile_way__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    position: static;
+  }
+  .switch_scheme {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .btn_dot {
+    background-color: transparent;
+    border: 1px dotted #000;
+  }
+  .tabs__item.active {
+    position: static;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .tabs__btn {
+    margin-bottom: 0;
+  }
+  .btn_med,
+  .btn_pol,
+  .btn_toi,
+  .btn_eat {
+    background-position: center;
+  }
+  .btn_eat {
+    transition: all 0.1s;
+    background-image: url('../img/svg/eat.svg');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      border-color: #fff;
+      background-color: rgba(256, 256, 256, .5);
+    }
+    &:active {
+      background-color: rgba(256, 256, 256, 1);
+    }
+  }
+  .btn_toi {
+    background-image: url('../img/svg/toi.svg');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      border-color: #fff;
+      background-color: rgba(256, 256, 256, .5);
+    }
+    &:active {
+      background-color: rgba(256, 256, 256, 1);
+    }
+  }
+
+  .btn_med {
+    background-position: center;
+    transition: all 0.1s;
+
+    &:hover {
+      border-color: #fff;
+      background-color: rgba(256, 256, 256, .5);
+    }
+    &:active {
+      background-color: rgba(256, 256, 256, 1);
+    }
+  }
+
+
+
+
+  .mp {
+    display: block !important;
+    position: absolute;
+    bottom: 90px;
+    font-size: 11px !important;
+  }
+  .menu-mobile__bottom {
+    .btn_box .btn {
+      min-width: 200px;
+      border-radius: 25px;
+      background-repeat: no-repeat;
+      background-position: 157px center;
+      padding: 10px 30px 10px 10px;
+      height: 42px;
+    }
+    .btn_box {
+      position: static;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .dropdown_sectors {
+    width: 90%;
+    .dropdown {
+      width: 100%;
+    }
+  }
+}

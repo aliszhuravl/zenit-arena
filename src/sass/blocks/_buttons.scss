@@ -1,0 +1,218 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 42px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-gray-40;
+  background-color: $color-white;
+  color: $font-color_dark;
+  font-family: $font-family_semibold;
+  font-size: $font_default;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  min-width: 200px;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:active {
+    background-color: darken($color-gray-10, 5%);
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_standart {
+  border-color: #2996ea;
+  background-color: #2996ea;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-50;
+    background-color: $color-blue-50;
+  }
+
+  &:active {
+    border-color: darken($color-blue-50, 5%);
+    background-color: darken($color-blue-50, 5%);
+  }
+}
+
+
+.btn_attach {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  color: $color-blue-30;
+  font-family: $font-family_bold;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_eat {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 5px rgba(41, 150, 234, .1);
+  transition: all 0.1s;
+  background-image: url('../img/svg/eat.svg');
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  color: #7b5aa5;
+  &:hover {
+    border-color: #fff;
+    background-color: rgba(256, 256, 256, .5);
+  }
+  &:active {
+    background-color: rgba(256, 256, 256, 1);
+  }
+}
+
+.btn_toi {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 5px rgba(41, 150, 234, .1);
+  background-image: url('../img/svg/toi.svg');
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  color: #2996ea;
+  &:hover {
+    border-color: #fff;
+    background-color: rgba(256, 256, 256, .5);
+  }
+  &:active {
+    background-color: rgba(256, 256, 256, 1);
+  }
+}
+
+.btn_med {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 5px rgba(41, 150, 234, .1);
+  background-image: url('../img/svg/med.svg');
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  transition: all 0.1s;
+  color: #40ae49;
+  &:hover {
+    border-color: #fff;
+    background-color: rgba(256, 256, 256, .5);
+  }
+  &:active {
+    background-color: rgba(256, 256, 256, 1);
+  }
+}
+
+.btn_pol {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 5px rgba(41, 150, 234, .1);
+  background-image: url('../img/svg/pol.svg');
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  transition: all 0.1s;
+  color: #e82a5c;
+  &:hover {
+    border-color: #fff;
+    background-color: rgba(256, 256, 256, .5);
+  }
+  &:active {
+    background-color: rgba(256, 256, 256, 1);
+  }
+}
+
+.btn_inactive {
+  background-color: transparent;
+  border: 1px dotted #555;
+  box-shadow: none;
+  filter: grayscale(100%);
+  &:hover {
+    background-color: transparent;
+    border: 1px dotted #555;
+    box-shadow: none;
+  }
+}
+
+.active_sl {
+  display: block !important;
+  opacity: 1 !important;
+  transition: 0.3s;
+}
+

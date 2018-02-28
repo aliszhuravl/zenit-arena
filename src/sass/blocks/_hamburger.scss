@@ -1,0 +1,91 @@
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 50; /* more then menu-mobile */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.hamburger__item {
+  display: block;
+  width: 27px;
+  height: 2px;
+  background: #000;
+  transition: all 0.2s ease-out;
+}
+
+.hamburger span {
+  @extend .hamburger__item;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  &:before,
+  &:after {
+    @extend .hamburger__item;
+    display: block;
+    content: '';
+    position: absolute;
+  }
+
+  &:before {
+    top: -10px;
+  }
+
+  &:after {
+    top: 10px;
+    width: 15px;
+  }
+}
+
+.hamburger_active {
+
+  & span {
+    transform: rotate(-45deg);
+    background: #000;
+    width: 30px;
+    top: 0;
+
+    &:before {
+      top: 0;
+      transform: rotate(-90deg);
+      background: #000;
+      width: 30px;
+      height: 2px;
+    }
+    &:after {
+      background-color: transparent;
+      transition: all 0.1s;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .hamburger {
+    width: 23px;
+    height: 23px;
+  }
+  .hamburger__item, .hamburger span, .hamburger span::before {
+    width: 23px;
+  }
+  .hamburger span::after {
+    width: 15px;
+    top: 8px;
+  }
+  .hamburger span::before {
+    top: -8px;
+  }
+
+  .hamburger_active span::before {
+      top: 0;
+    }
+}

@@ -1,0 +1,67 @@
+
+.help_services {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  .btn {
+    margin-bottom: 15px;
+  }
+}
+
+.level {
+  font-size: 28px;
+}
+
+.stadium_levels__box {
+  position: absolute;
+  right: 210px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 9px 9px rgba(41, 150, 234, .1);
+  z-index: 4;
+}
+
+.sl__inner {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+
+.level_up {
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg);
+}
+
+.level_down {
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(135deg);
+}
+
+.active_lvl {
+  font-family: $font-family_bold;
+}
+
+@media (max-width: 1600px) {
+  .stadium_levels__box {
+    right: 90px;
+  }
+}

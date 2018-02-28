@@ -1,0 +1,74 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: #000;
+  font-size: 15px;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_active {
+  color: $color-blue-50;
+}
+
+.link_light {
+  color: $color-blue-10;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+}
+
+.link_dark {
+  color: $font-color_dark;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+}
+
+.link_blue {
+  color: $color-blue-50;
+  
+  &:hover {
+    color: $color-blue-60;
+  }
+}
+
+.link_underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link-simple {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.l-active {
+  font-family: $font-family_bold;
+  color: $color-blue-60;
+}
+
+.l-un-active {
+  color: $color-gray-40;
+}
+
+.l-un-active:hover {
+  color: $color-gray-40;
+  cursor: default;
+}
